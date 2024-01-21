@@ -1,0 +1,28 @@
+@keyframes splash-screen-action {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('../../imgs/background-hatches-primary.png');
+
+  animation: splash-screen-action 1s ease-in-out forwards;
+  animation-delay: 1s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 90px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="typography-headline-large">
+        만랩 Apps에 오신 것을 환영합니다
+      </h1>
+      <p class="typography-body-large">
+        서비스 이용을 위해 핸드폰 번호 인증이 필요합니다
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input
+        class="text-input secondary typography-label-large"
+        type="text"
+        placeholder="핸드폰 번호를 입력해주세요(000-0000-0000)"
+      />
+      <button
+        class="primary button-rounded-square typography-label-large tooltip-target"
+        type="submit"
+        disabled
+      >
+        번호 인증하기
+        <p class="tooltip-content secondary">
+          아직 업데이트 되지 않은 기능입니다.
+        </p>
+      </button>
+    </form>
+    <a id="enter-as-guest" href="/">
+      <button
+        class="primary button-rounded-square typography-label-large tooltip-target"
+      >
+        게스트 모드로 둘러보기
+      </button>
+    </a>
+    <div id="splash-screen" class="font-nanum-pen">Mann Lab</div>
+  </body>
+</html>

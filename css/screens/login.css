@@ -1,0 +1,29 @@
+.welcome-header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 50px 0;
+
+  gap: 20px;
+}
+
+#login-form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#enter-as-guest {
+  width: 80%;
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 30px auto;
+}

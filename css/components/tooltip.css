@@ -1,0 +1,21 @@
+.tooltip-target {
+  position: relative;
+}
+
+.tooltip-target:hover {
+  .tooltip-content {
+    display: block;
+  }
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: -100%;
+  left: 10%;
+  z-index: 5;
+  /* transform: translateY(20px); */
+
+  padding: 10px;
+  border-radius: 10px;
+}
