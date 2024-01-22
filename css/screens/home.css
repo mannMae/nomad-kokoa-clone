@@ -1,0 +1,90 @@
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.home-header__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+.developer:hover {
+  background-image: url('../../imgs/background-hatches-primary.png');
+}
+
+.developer__information {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.developer img {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.horizontal-line {
+  width: 100%;
+  object-fit: fill;
+}
+
+.applist {
+  padding: 15px;
+}
+
+.applist__title {
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.applist__app-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+.applist__app-card:hover {
+  background-image: url('../../imgs/background-hatches-primary.png');
+}
+
+.applist__app-card__more {
+  padding: 30px 15px;
+
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+}
+
+.applist__app-card__information {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.applist__app-card img {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 20px;
+  object-fit: cover;
+}

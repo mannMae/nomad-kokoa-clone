@@ -1,0 +1,177 @@
+#chat-page {
+  background-image: url('../../imgs/background-hatches-primary.png');
+}
+
+.chat-page-header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px;
+}
+
+.chat-page-header__column {
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+
+.chat-page-header__column:nth-child(2) {
+  justify-content: center;
+}
+
+.chat-page-header__column:last-child {
+  justify-content: end;
+  gap: 10px;
+}
+
+.chatlist {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+
+  gap: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.animation-fade-in {
+  animation: fadeIn 0.9s linear;
+}
+
+.chatlist__date-notice {
+  align-self: center;
+
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  background-color: #aaa;
+  color: #fff;
+}
+
+.chatlist__my-message {
+  align-self: end;
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+.chatlist__my-message__content {
+  background-color: #fff;
+  border: 2px solid #aaa;
+  padding: 10px;
+  border-radius: 10px 0 10px 10px;
+}
+
+.chatlist__opponent-message {
+  display: flex;
+  gap: 5px;
+}
+
+.chatlist__opponent-message__profile-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 15px;
+}
+
+.chatlist__opponent-message__content {
+  background-color: #aaa;
+  padding: 10px;
+  border-radius: 0 10px 10px 10px;
+  color: #fff;
+}
+
+.chatlist__opponent-message__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chatlist__opponent-message__text-box__content-time-wrapper {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+.message-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+
+  background-color: #fff;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.message-form:focus-within {
+  justify-content: center;
+  background-color: transparent;
+}
+
+.message-form:focus-within .message-form__media-button {
+  opacity: 0;
+}
+
+.message-form:focus-within .message-form__input-field {
+  width: 85%;
+}
+
+.message-form__media-button {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 5px;
+  border: 2px solid #aaa;
+
+  background-color: #fff;
+  color: #999;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.message-form__input-field {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+
+  background-color: #fff;
+  padding: 1px;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.message-form__input-field .message-form__input-field__input {
+  width: 100%;
+  background-color: transparent;
+}
+
+.message-form__submit-button {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+}

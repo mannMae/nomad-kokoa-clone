@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="chat-page">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="chat-page-header">
+      <div class="chat-page-header__column">
+        <a href="home.html">
+          <i class="fa fa-arrow-left icon-button typography-headline-small"></i>
+        </a>
+      </div>
+      <div class="chat-page-header__column">
+        <h2 class="font-nanum-pen typography-headline-large">MannMae</h2>
+      </div>
+      <div class="chat-page-header__column">
+        <i
+          class="fa fa-search icon-button typography-headline-small"
+          aria-hidden="true"
+        ></i>
+        <i
+          class="fa fa-ellipsis-h icon-button typography-headline-small"
+          aria-hidden="true"
+        ></i>
+      </div>
+    </header>
+
+    <div class="chatlist">
+      <span
+        class="chatlist__date-notice typography-label-small animation-fade-in"
+        >2024년 1월 20일</span
+      >
+      <div class="chatlist__my-message animation-fade-in">
+        <span class="chatlist__my-message__time typography-label-small"
+          >18:30</span
+        >
+        <span class="chatlist__my-message__content typography-label-medium"
+          >안녕하세요!</span
+        >
+      </div>
+      <div class="chatlist__opponent-message animation-fade-in">
+        <img
+          class="chatlist__opponent-message__profile-image"
+          src="imgs/profile.jpg"
+        />
+        <div class="chatlist__opponent-message__text-box">
+          <span
+            class="chatlist__opponent-message__text-box__username typography-label-medium"
+            >MannMae</span
+          >
+          <div
+            class="chatlist__opponent-message__text-box__content-time-wrapper"
+          >
+            <span
+              class="chatlist__opponent-message__content typography-label-medium"
+              >반갑습니다 ㅎㅎ</span
+            >
+            <span class="chatlist__my-message__time typography-label-small"
+              >18:30</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="message-form">
+      <button class="message-form__media-button tooltip-target" type="button">
+        <i class="fa fa-plus"> </i>
+        <p class="tooltip-content secondary">
+          아직 업데이트 되지 않은 기능입니다.
+        </p>
+      </button>
+      <label class="message-form__input-field">
+        <input
+          class="message-form__input-field__input text-input typography-label-medium"
+        />
+        <button class="message-form__submit-button" type="submit">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+      </label>
+    </form>
+  </body>
+</html>

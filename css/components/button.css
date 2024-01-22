@@ -2,3 +2,39 @@
   border-radius: 5px;
   padding: 10px;
 }
+
+.icon-button::before {
+  height: 100%;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+@keyframes icon-button-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon-oulined {
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-oulined:hover {
+  color: #aaa;
+  -webkit-text-fill-color: #aaa;
+  animation: 0.5s icon-button-hover;
+  animation-delay: 0.3s;
+}
+
+/* .icon-button:hover::before {
+  background-image: url('../../imgs/background-hatches-primary.png');
+} */

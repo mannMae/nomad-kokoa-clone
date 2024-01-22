@@ -9,10 +9,13 @@
 
 /* Components */
 @import 'components/button.css';
+@import 'components/bottom-navigation.css';
 @import 'components/status-bar.css';
 @import 'components/input.css';
 @import 'components/splash-screen.css';
 @import 'components/tooltip.css';
 
 /* Screens */
+@import 'screens/chat.css';
 @import 'screens/login.css';
+@import 'screens/home.css';

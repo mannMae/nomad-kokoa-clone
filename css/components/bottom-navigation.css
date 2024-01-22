@@ -1,0 +1,19 @@
+#bottom-navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  gap: 15px;
+  padding: 0 15px 15px;
+
+  background-color: #fff;
+}
+
+#bottom-navigation .horizontal-line {
+  margin-bottom: 15px;
+}
+
+.bottom-navigation__inner {
+  display: flex;
+  justify-content: space-around;
+}
